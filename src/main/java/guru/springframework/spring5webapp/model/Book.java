@@ -24,7 +24,11 @@ public class Book {
     private Publisher publisher;
 
     public Book() {
+    }
 
+    public Book(String title, String isbn) {
+        this.title = title;
+        this.isbn = isbn;
     }
 
     public Publisher getPublisher() {
@@ -33,11 +37,6 @@ public class Book {
 
     public void setPublisher(Publisher publisher) {
         this.publisher = publisher;
-    }
-
-    public Book(String title, String isbn) {
-        this.title = title;
-        this.isbn = isbn;
     }
 
     public Long getId() {
@@ -78,7 +77,6 @@ public class Book {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", isbn='" + isbn + '\'' +
-                ", authors=" + authors +
                 '}';
     }
 
